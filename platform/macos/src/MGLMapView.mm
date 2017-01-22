@@ -2685,7 +2685,7 @@ public:
         fbo = mbgl::gl::value::BindFramebuffer::Get();
         getContext().bindFramebuffer.setCurrentValue(fbo);
         getContext().viewport.setCurrentValue(getViewport());
-        assert(mbgl::gl::value::Viewport::Get() == getContext().viewport.getCurrentValue());
+        //assert(mbgl::gl::value::Viewport::Get() == getContext().viewport.getCurrentValue());
     }
 
     void bind() override {
